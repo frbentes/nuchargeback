@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="nubank.com.br.nuchargeback.ui.chargeback.ChargebackActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_chargeback_title"
+                style="@style/AppTheme.ChargebackTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/txt_chargeback_title_height"
+                android:background="@drawable/divider"
+                android:gravity="center"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tv_error_message"
+                style="@style/AppTheme.ChargebackError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/txt_chargeback_error_margin"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_header"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rl_card_block_height"
+                android:layout_gravity="center_horizontal">
+
+                <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/pb_card"
+                    app:spbStyle="@style/GNowProgressBar"
+                    app:spb_color="@color/titlePurple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:padding="@dimen/btn_card_block_padding"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_card_lock"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:background="@drawable/btn_full_width_no_border"
+                    android:drawablePadding="@dimen/btn_card_block_drawable_padding"
+                    android:paddingLeft="@dimen/btn_card_block_padding"
+                    android:paddingRight="@dimen/btn_card_block_padding"
+                    android:theme="@style/AppTheme.ChargebackCardBlock" />
+            </RelativeLayout>
+            
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_reasons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edt_comment"
+                style="@style/AppTheme.ChargebackComment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/divider"
+                android:layout_marginTop="@dimen/txt_comment_margin_top"
+                android:ems="8"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/txt_comment_padding"
+                android:maxLines="8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_weight="1"
+                android:background="@drawable/btn_full_width_no_border"
+                android:gravity="left|center"
+                android:onClick="onCancelClicked"
+                android:paddingLeft="@dimen/btn_cancel_padding_left"
+                android:text="@string/button_cancel"
+                android:textColor="@color/btnCloseGray" />
+
+            <Button
+                android:id="@+id/btn_contest"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_weight="1"
+                android:background="@drawable/btn_full_width_no_border"
+                android:enabled="false"
+                android:gravity="right|center"
+                android:onClick="onContestClicked"
+                android:paddingRight="@dimen/btn_contest_padding_right"
+                android:text="@string/button_contest"
+                android:textColor="@color/btnDisabledGray" />
+        </LinearLayout>
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pb_chargeback"
+            app:cpbStyle="@style/CircularProgressBar"
+            app:cpb_color="@color/titlePurple"
+            android:layout_width="@dimen/progress_width"
+            android:layout_height="@dimen/progress_height"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/root_padding">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/AppTheme.DialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/title_padding_top" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        style="@style/AppTheme.DialogMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:gravity="center"
+        android:paddingTop="@dimen/message_padding_top"
+        android:paddingBottom="@dimen/message_padding_bottom" />
+
+    <Button
+        android:id="@+id/btn_close"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_below="@+id/tv_message"
+        android:layout_marginTop="@dimen/close_margin_top"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_full_width_no_border"
+        android:text="@string/button_close"
+        android:textColor='@color/btnCloseGray' />
+</RelativeLayout>

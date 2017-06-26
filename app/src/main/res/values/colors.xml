@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="titlePurple">#6e2b77</color>
+    <color name="textBlack">#222222</color>
+    <color name="textWhite">#ffffff</color>
+    <color name="textHint">#999999</color>
+    <color name="background">#fdfdfd</color>
+    <color name="textGreen">#417505</color>
+    <color name="textRed">#d5171b</color>
+    <color name="btnCloseGray">#808191</color>
+    <color name="btnDisabledGray">#cccccc</color>
+    <color name="btnEnabledPurple">#6e2b77</color>
+
+    <color name="btnBackgroundPressed">#dbdbdb</color>
+
+</resources>

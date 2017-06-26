@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_notice_title_height">84dp</dimen>
+    <dimen name="txt_notice_description_margin">28dp</dimen>
+    <dimen name="btn_height">84dp</dimen>
+
+    <dimen name="txt_chargeback_title_height">64dp</dimen>
+    <dimen name="txt_chargeback_error_margin">22dp</dimen>
+    <dimen name="rl_card_block_height">64dp</dimen>
+    <dimen name="btn_card_block_drawable_padding">12dp</dimen>
+    <dimen name="btn_card_block_padding">20dp</dimen>
+    <dimen name="txt_comment_padding">16dp</dimen>
+    <dimen name="txt_comment_margin_top">5dp</dimen>
+    <dimen name="btn_cancel_padding_left">44dp</dimen>
+    <dimen name="btn_contest_padding_right">44dp</dimen>
+    <dimen name="switch_padding">12dp</dimen>
+
+    <!-- dialog -->
+    <dimen name="root_padding">10dp</dimen>
+    <dimen name="title_padding_top">24dp</dimen>
+    <dimen name="message_padding_top">20dp</dimen>
+    <dimen name="message_padding_bottom">24dp</dimen>
+    <dimen name="close_margin_top">24dp</dimen>
+
+
+    <!-- smooth progress bar -->
+    <dimen name="progress_stroke_width">3dp</dimen>
+    <dimen name="progress_width">28dp</dimen>
+    <dimen name="progress_height">28dp</dimen>
+</resources>

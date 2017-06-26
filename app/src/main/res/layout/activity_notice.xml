@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="nubank.com.br.nuchargeback.ui.notice.NoticeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_notice_title"
+                style="@style/AppTheme.NoticeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/txt_notice_title_height"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_notice_description"
+                style="@style/AppTheme.NoticeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/txt_notice_description_margin"
+                android:layout_marginLeft="@dimen/txt_notice_description_margin"
+                android:layout_marginRight="@dimen/txt_notice_description_margin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_primary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:background="@drawable/btn_full_width"
+                android:enabled="false"
+                android:textColor="@color/btnDisabledGray"
+                android:onClick="onContinueClicked"
+                android:layout_gravity="bottom" />
+
+            <Button
+                android:id="@+id/btn_secondary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:background="@drawable/btn_full_width"
+                android:textColor="@color/btnCloseGray"
+                android:text="@string/button_close"
+                android:onClick="onCloseClicked"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pb_notice"
+            app:cpbStyle="@style/CircularProgressBar"
+            app:cpb_color="@color/titlePurple"
+            android:layout_width="@dimen/progress_width"
+            android:layout_height="@dimen/progress_height"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

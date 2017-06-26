@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">NuChargeback</string>
+
+    <!-- Chargeback -->
+    <string name="card_lock">Bloqueamos preventivamente o seu cartão</string>
+    <string name="card_unlock">Cartão desbloqueado, recomendamos\nmantê-lo bloqueado.</string>
+    <string name="switch_on">sim</string>
+    <string name="switch_off">não</string>
+
+    <!-- Contestation dialog -->
+    <string name="dialog_title">Contestação de\ncompra recebida</string>
+    <string name="dialog_message">Fique de olho no seu email! Nos próximos\n3 dias você deverá receber um primeiro\nretorno sobre sua contestação.</string>
+
+    <!-- Buttons -->
+    <string name="button_continue">Continuar</string>
+    <string name="button_contest">Contestar</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_close">Fechar</string>
+
+    <!-- Error alert -->
+    <string name="snackbar_connection_failed">Falha na conexão, por favor verifique sua conexão com a internet.</string>
+    <string name="snackbar_data_not_received">Falha ao carregar dados.</string>
+    <string name="snackbar_data_not_sent">Falha ao enviar dados.</string>
+    <string name="snackbar_card_lock_failed">Falha ao bloquear/desbloquear cartão.</string>
+    <string name="error_title">Ops&#8230;</string>
+
+    <!-- Smooth Progress Bar -->
+    <string name="progress_rotation_speed" translatable="false">2.0</string>
+    <string name="progress_sweep_speed" translatable="false">1.0</string>
+
+</resources>

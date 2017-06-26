@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_reason_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/sw_reason"
+        android:padding="@dimen/switch_padding"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/textBlack" />
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/sw_reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/switch_padding"
+        android:layout_centerVertical="true"
+        app:kswTextOn="@string/switch_on"
+        app:kswTextOff="@string/switch_off"
+        app:kswBackColor="@color/btnDisabledGray"
+        app:kswThumbColor="@color/textWhite"
+        android:textColor="@color/textWhite" />
+</RelativeLayout>
